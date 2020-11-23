@@ -1,11 +1,11 @@
 <?php
 
-require 'Task.php';
+
 $query = require 'bootstrap.php';
 
 
-$tasks = $query->selectAll('todos','Task');
+$tasks = $query->selectAll('todos');
 
-die(var_dump($tasks));
+
 
 require 'index.view.php';
