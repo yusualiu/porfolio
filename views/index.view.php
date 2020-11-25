@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    header{
-      background: brown;
-      text-align: center;
-      padding:2em;
-      
-    }
-    ul{
-      list-style: none;
-    }
-  </style>
-</head>
-<body>
-<nav>
-    <ul>
-      <li><a href="/contact.php">Contact</a></li>
-      <li><a href="/about.php">About</a></li>
-    </ul>
-</nav>
+
+<?php require 'partials/head.view.php';?>
+
 <header>
 
 <h1>My Tasks</h1>
@@ -40,7 +18,4 @@
 </ul>
 </header>
 
-  
-  
-</body>
-</html>
+<?php require 'partials/footer.view.php';?>
