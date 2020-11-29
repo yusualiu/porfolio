@@ -12,7 +12,7 @@ App::bind('database', new QueryBuilder(Connection::make(App::get('config')['data
 
 function view($name,$data=[]){
   extract($data);
-  require "views/{$name}.view.php";
+  require "app/views/{$name}.view.php";
   
 }
 

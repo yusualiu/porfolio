@@ -9,4 +9,4 @@ $router = new Router;
 
 
 
-Router::load('routes.php')->direct(Request::uri(),Request::method());
+Router::load('app/routes.php')->direct(Request::uri(),Request::method());
