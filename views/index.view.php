@@ -1,16 +1,7 @@
 
 <?php require 'partials/head.view.php';?>
 
-<?php foreach ($users as $user) :?>
-  <li><?= $user->name?></li>
-<?php endforeach?>
-<h1>Submit Your Name</h1>
+<h1>Home Page</h1>
 
-<form method="POST" action="/names">
-  <input name="name" type="text"/>
-  <button type="submit">Submit</button>
-
-
-</form>
 
 <?php require 'partials/footer.view.php';?>
