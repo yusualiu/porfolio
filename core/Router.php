@@ -36,7 +36,8 @@ class Router{
       );
     }
 
-    throw new Exception('No routes defined for this uri');
+    // throw new Exception('No routes defined for this uri');
+    return view('404');
   }
 
   protected function callAction($controller,$action){

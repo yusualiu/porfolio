@@ -19,5 +19,13 @@ class UsersController{
     redirect('users');
     
   }
+  public function delete(){    
+    App::get('database')->delete('users',[
+      'id'=>$_POST['id'],      
+    ]);
+
+    redirect('users');
+  }
+  
 
 }

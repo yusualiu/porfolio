@@ -30,7 +30,21 @@ class QueryBuilder{
     $statement->execute($parameters);
    
    } catch (Exception $th) {
-     die("Whoops error 404");
+     die("Something went wrong we could not proceed with transaction");
    }
+  }
+
+  public function delete($table,$id){
+   
+  $sql = "DELETE FROM ${table} WHERE id=:id ";
+  try {
+    $statement = $this->pdo->prepare($sql);
+    
+    $statement->execute($id);
+   
+   } catch (Exception $th) {
+     die("Whoops Something went wrong we could not proceed with transaction");
+   }
+   
   }
 }
